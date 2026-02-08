@@ -34,7 +34,7 @@ La pagina simula una plataforma educativa con un encabezado, un bloque principal
 2. Dar mayor protagonismo a la seccion de planes si se desea que reciba atencion (por ejemplo, moverla mas arriba o aumentar contraste).
 
 ## Evidencia
-Agregar en una carpeta `evidencia/`:
+ carpeta `evidencia/`:
 - Captura de calibracion de WebGazer.
 - Captura con puntos de mirada.
 - Captura con mapa de calor visible.
