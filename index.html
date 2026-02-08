@@ -1,0 +1,144 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eye-Tracking Demo - Registro</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="heatmap-container" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="logo">NovaLearn</div>
+      <nav class="nav">
+        <a href="#features">Funciones</a>
+        <a href="#pricing">Planes</a>
+        <a href="#support">Soporte</a>
+      </nav>
+    </header>
+
+    <main class="hero" id="main">
+      <section class="hero-content">
+        <h1>Aprende a tu ritmo con rutas personalizadas</h1>
+        <p>
+          Plataforma de cursos cortos con seguimiento inteligente. Descubre
+          contenido recomendado, completa metas semanales y recibe apoyo de
+          tutores en vivo.
+        </p>
+        <div class="cta-row">
+          <button id="cta" class="cta">Registrarme gratis</button>
+          <span class="cta-note">No requiere tarjeta</span>
+        </div>
+        <ul class="bullets" id="features">
+          <li>Lecciones de 5 a 10 minutos</li>
+          <li>Recordatorios automáticos</li>
+          <li>Progreso visible en todo momento</li>
+          <li>Certificados descargables</li>
+        </ul>
+
+        <div class="stats">
+          <div>
+            <strong>12,500+</strong>
+            <span>estudiantes activos</span>
+          </div>
+          <div>
+            <strong>140</strong>
+            <span>rutas disponibles</span>
+          </div>
+          <div>
+            <strong>4.8/5</strong>
+            <span>valoracion promedio</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="panel">
+        <h2>Tarea del usuario</h2>
+        <p>
+          Encuentra y haz clic en el botón <strong>"Registrarme gratis"</strong>
+          mientras observas la página.
+        </p>
+        <div class="controls">
+          <button id="start" class="secondary">Iniciar captura (45s)</button>
+          <button id="stop" class="secondary" disabled>Detener</button>
+          <button id="show" class="secondary" disabled>Mostrar mapa</button>
+          <button id="clear" class="ghost" disabled>Limpiar mapa</button>
+        </div>
+        <div class="status" id="status">Estado: listo</div>
+        <div class="tips">
+          <h3>Calibracion</h3>
+          <ol>
+            <li>Permite el acceso a la camara.</li>
+            <li>Mira el centro y luego los bordes por unos segundos.</li>
+            <li>Evita moverte demasiado durante la captura.</li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <section class="info-grid">
+      <article class="info-card">
+        <h3>Mentorias en vivo</h3>
+        <p>Sesiones semanales con expertos para resolver dudas reales.</p>
+      </article>
+      <article class="info-card">
+        <h3>Planificador de metas</h3>
+        <p>Organiza tus avances con recordatorios y metas semanales.</p>
+      </article>
+      <article class="info-card">
+        <h3>Comunidad activa</h3>
+        <p>Foros con desafios y proyectos colaborativos.</p>
+      </article>
+    </section>
+
+    <section class="testimonials">
+      <h2>Lo que dicen los estudiantes</h2>
+      <div class="quotes">
+        <blockquote>
+          “Las rutas cortas me ayudaron a avanzar sin perder motivacion.”
+          <span>- Andrea M.</span>
+        </blockquote>
+        <blockquote>
+          “El progreso visible me mantiene enfocado cada semana.”
+          <span>- Luis R.</span>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="footer" id="pricing">
+      <div>
+        <h3>Plan Inicial</h3>
+        <p>Acceso a 3 rutas de aprendizaje.</p>
+      </div>
+      <div>
+        <h3>Plan Pro</h3>
+        <p>Acceso completo y tutoria semanal.</p>
+      </div>
+      <div>
+        <h3>Soporte</h3>
+        <p id="support">Chat 24/7 para resolver dudas.</p>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Preguntas frecuentes</h2>
+      <details>
+        <summary>¿Cuanto dura cada leccion?</summary>
+        <p>Entre 5 y 10 minutos, pensadas para avanzar sin saturacion.</p>
+      </details>
+      <details>
+        <summary>¿Puedo cancelar cuando quiera?</summary>
+        <p>Si, puedes cambiar de plan o cancelar desde tu perfil.</p>
+      </details>
+      <details>
+        <summary>¿Incluye certificados?</summary>
+        <p>Si, cada ruta completa genera un certificado descargable.</p>
+      </details>
+    </section>
+
+    <script src="https://unpkg.com/webgazer@2.1.0/dist/webgazer.js"></script>
+    <script src="https://unpkg.com/heatmap.js@2.0.5/build/heatmap.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
